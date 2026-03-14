@@ -1,11 +1,14 @@
 import React from 'react';
+import googleLogo from '../assets/google-partner.png';
+import metaLogo from '../assets/meta-partner.png';
+import azureLogo from '../assets/microsoft-partner.png';
+import awsLogo from '../assets/aws-partner.png';
 
 const partners = [
-  { name: 'Google Partner', logo: '/src/assets/google-partner.png', className: 'scale-[1.0]' },
-  { name: 'Meta Business Partner', logo: '/src/assets/meta-partner.png', className: 'scale-[1.6]' },
-  { name: 'Azure Partner', logo: '/src/assets/microsoft-partner.png', className: 'scale-[1.7]' },
-  { name: 'AWS Partner', logo: '/src/assets/aws-partner.png', className: 'scale-[1.6]' },
-
+  { name: 'Google Partner', logo: googleLogo, className: 'scale-[1.0]' },
+  { name: 'Meta Business Partner', logo: metaLogo, className: 'scale-[1.6]' },
+  { name: 'Azure Partner', logo: azureLogo, className: 'scale-[1.7]' },
+  { name: 'AWS Partner', logo: awsLogo, className: 'scale-[1.6]' },
 ];
 
 export default function PartnerBadges() {
