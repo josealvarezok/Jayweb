@@ -40,7 +40,7 @@ src/
 <a name="español"></a>
 ## 🚀 Versión en Español
 
-Landing page profesional de alta conversión diseñada para JAY, agencia de marketing e Inteligência Artificial. El proyecto destaca por su estética brutalista premium, animaciones fluidas y enfoque total en resultados.
+Landing page profesional de alta conversión diseñada para JAY Marketing Digital, agencia de marketing e Inteligencia Artificial. El proyecto destaca por su estética brutalista premium, animaciones fluidas y enfoque total en resultados.
 
 ### ✨ Características
 - **Stack Moderno**: React 19 + Vite + Tailwind CSS 4.
