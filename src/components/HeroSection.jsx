@@ -3,9 +3,9 @@ import { ArrowRight, Sparkles } from 'lucide-react';
 
 export default function HeroSection() {
   const [chars, setChars] = useState(0);
-  const text1 = "Tú traes la idea, ";
-  const text2 = "Yo me encargo";
-  const text3 = " del resto.";
+  const text1 = "Potenciamos ideas, ";
+  const text2 = "escalamos";
+  const text3 = " ventas.";
   const totalChars = text1.length + text2.length + text3.length;
 
   useEffect(() => {
@@ -38,9 +38,9 @@ export default function HeroSection() {
         Disponible para nuevos proyectos
       </div>
 
-      <h1 className="grid text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter leading-[1] uppercase mb-8 text-white max-w-5xl">
+      <h1 className="grid text-5xl md:text-7xl lg:text-7xl font-black tracking-tighter leading-[1] uppercase mb-8 text-white max-w-5xl">
         <span className="col-start-1 row-start-1 opacity-0 pointer-events-none select-none">
-          Tú traes la idea, <br /> Yo me encargo del resto.
+          Potenciamos ideas, <br /> escalamos ventas.
         </span>
 
         <span className="col-start-1 row-start-1">
@@ -52,7 +52,7 @@ export default function HeroSection() {
         </span>
       </h1>
       <p className="text-xl md:text-2xl text-neutral-400 max-w-3xl font-medium mb-12 relative z-10">
-        Construimos tu producto y multiplicamos tus resultados usando <strong className="text-white">Datos, IA y Automatizaciones</strong>. Tú te enfocas en liderar, nosotros en ejecutar.
+        Construimos tu servicio y <strong className="text-white">multiplicamos tus ventas usando Datos, Publicidad, IA y Automatizaciones</strong>. Tú te enfocas en liderar, nosotros en ejecutar.
       </p>
       <a href="#contacto" className="group relative z-10 inline-flex items-center justify-center gap-4 bg-[#ff5e13] text-white px-10 py-5 rounded-full font-bold text-xl overflow-hidden transition-all duration-300 hover:scale-105 shadow-[0_0_40px_-10px_#ff5e13]">
         <span className="relative z-10 group-hover:text-black transition-colors duration-300">Agendar Auditoría Gratuita</span>

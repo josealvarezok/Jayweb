@@ -19,22 +19,7 @@ const pillars = [
   },
   {
     id: "02",
-    icon: <Bot size={40} className="text-black" />,
-    title: "Sistemas e IA",
-    tagline: "Automatiza. Escala. Domina.",
-    description: "Reemplazamos tareas manuales con agentes autónomos de Inteligencia Artificial. Desde calificación de leads hasta la gestión interna completa de tu empresa, 24/7.",
-    capabilities: [
-      "Agentes de Ventas y Atención IA (24/7)",
-      "Automatización de procesos internos (RPA)",
-      "Integración de IA en sistemas existentes",
-      "Capacitación y mentoría en IA para equipos",
-    ],
-    accent: "filled",
-    result: "Costos operativos reducidos. Equipo enfocado en crecer."
-  },
-  {
-    id: "03",
-    icon: <Target size={40} className="text-[#ff5e13]" />,
+    icon: <Target size={40} className="text-black" />,
     title: "Growth & Performance",
     tagline: "Convertimos inversión en demanda constante.",
     description: "Todo el arsenal de captación en un solo lugar: campañas predictivas con IA, contenido de alto impacto y creatividades que convierten para dominar tu nicho.",
@@ -44,8 +29,23 @@ const pillars = [
       "Social Media y Growth Hacking",
       "Campañas de Influencers de alto ROI",
     ],
-    accent: "orange",
+    accent: "filled",
     result: "Demanda constante y ventas en piloto automático."
+  },
+  {
+    id: "03",
+    icon: <Bot size={40} className="text-[#ff5e13]" />,
+    title: "Sistemas e IA",
+    tagline: "Automatiza. Escala. Domina.",
+    description: "Reemplazamos tareas manuales con agentes autónomos de Inteligencia Artificial. Desde calificación de leads hasta la gestión interna completa de tu empresa, 24/7.",
+    capabilities: [
+      "Agentes de Ventas y Atención IA (24/7)",
+      "Automatización de procesos internos (RPA)",
+      "Integración de IA en sistemas existentes",
+      "Capacitación y mentoría en IA para equipos",
+    ],
+    accent: "orange",
+    result: "Costos operativos reducidos. Equipo enfocado en crecer."
   }
 ];
 
@@ -65,24 +65,21 @@ export default function ServicesGrid() {
         {pillars.map((pillar, index) => (
           <div
             key={index}
-            className={`group relative rounded-[2rem] p-10 flex flex-col justify-between overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl ${
-              pillar.accent === 'filled'
+            className={`group relative rounded-[2rem] p-10 flex flex-col justify-between overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl ${pillar.accent === 'filled'
                 ? 'bg-[#ff5e13] text-black'
                 : 'bg-[#121212] border border-white/10 hover:border-[#ff5e13]/50 text-white'
-            }`}
+              }`}
           >
             {/* BG Number */}
-            <div className={`absolute bottom-6 right-8 text-8xl font-black select-none pointer-events-none transition-all duration-300 ${
-              pillar.accent === 'filled' ? 'text-black/10' : 'text-white/5 group-hover:text-[#ff5e13]/10'
-            }`}>
+            <div className={`absolute bottom-6 right-8 text-8xl font-black select-none pointer-events-none transition-all duration-300 ${pillar.accent === 'filled' ? 'text-black/10' : 'text-white/5 group-hover:text-[#ff5e13]/10'
+              }`}>
               {pillar.id}
             </div>
 
             <div className="relative z-10">
               {/* Icon */}
-              <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-8 ${
-                pillar.accent === 'filled' ? 'bg-black/15' : 'bg-white/5 border border-white/10'
-              }`}>
+              <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-8 ${pillar.accent === 'filled' ? 'bg-black/15' : 'bg-white/5 border border-white/10'
+                }`}>
                 {pillar.icon}
               </div>
 
@@ -114,19 +111,17 @@ export default function ServicesGrid() {
             </div>
 
             {/* Result Footer */}
-            <div className={`relative z-10 flex items-center justify-between border-t pt-5 ${
-              pillar.accent === 'filled' ? 'border-black/20' : 'border-white/10'
-            }`}>
+            <div className={`relative z-10 flex items-center justify-between border-t pt-5 ${pillar.accent === 'filled' ? 'border-black/20' : 'border-white/10'
+              }`}>
               <span className={`text-sm font-bold ${pillar.accent === 'filled' ? 'text-black/70' : 'text-neutral-400'}`}>
                 {pillar.result}
               </span>
               <a
                 href="#contacto"
-                className={`w-10 h-10 rounded-full flex items-center justify-center shrink-0 transition-all duration-300 ${
-                  pillar.accent === 'filled'
+                className={`w-10 h-10 rounded-full flex items-center justify-center shrink-0 transition-all duration-300 ${pillar.accent === 'filled'
                     ? 'bg-black text-white hover:bg-white hover:text-black'
                     : 'bg-white/5 text-white group-hover:bg-[#ff5e13] group-hover:text-white'
-                }`}
+                  }`}
               >
                 <ArrowUpRight size={20} />
               </a>
